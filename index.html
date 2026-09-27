@@ -1,0 +1,3225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ==============================
+         BASIC META
+    =============================== -->
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ==============================
+         SEO
+    =============================== -->
+    <title>Algi Pratama Sasra | Web Developer & AI Enthusiast</title>
+    <link
+      rel="icon"
+      type="image/webp"
+      href="assets/images/logos/Logo_AP.webp"
+    />
+    <meta
+      name="description"
+      content="Algi Pratama Sasra is a Web Developer specializing in modern responsive websites, web applications, dashboards, and AI-powered solutions using JavaScript, Tailwind CSS, PHP, Laravel, Python, and Streamlit."
+    />
+
+    <meta
+      name="keywords"
+      content="Algi Pratama Sasra, Web Developer, Software Developer,AI Enthusiast, Frontend Developer, Backend Developer, Web Development, JavaScript, Tailwind CSS, PHP, Laravel, Python, Streamlit, AI Developer, Indonesia"
+    />
+
+    <meta name="author" content="Algi Pratama Sasra" />
+
+    <meta name="robots" content="index, follow" />
+
+    <link rel="canonical" href="https://algiportfolio.dev/" />
+
+    <!-- ==============================
+         OPEN GRAPH
+         Facebook / LinkedIn / WhatsApp
+    ============================== -->
+
+    <meta property="og:type" content="website" />
+
+    <meta
+      property="og:title"
+      content="Algi Pratama Sasra | Web Developer & Software Developer"
+    />
+
+    <meta
+      property="og:description"
+      content="Portfolio of Algi Pratama Sasra — Web Developer specializing in modern websites, web applications, dashboards, and AI-powered solutions."
+    />
+
+    <meta property="og:site_name" content="Algi Pratama Sasra Portfolio" />
+
+    <meta
+      property="og:image"
+      content="https://algiportfolio.dev/assets/images/profile/profile.webp"
+    />
+
+    <!-- ==============================
+         TWITTER / X
+    ============================== -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta
+      name="twitter:title"
+      content="Algi Pratama Sasra | Web Developer & Software Developer"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Portfolio of Algi Pratama Sasra — Web Developer specializing in modern websites, web applications, dashboards, and AI-powered solutions."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://algiportfolio.dev/assets/images/profile/profile.webp"
+    />
+
+    <!-- ==============================
+         GOOGLE FONT
+    ============================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ==============================
+         TAILWIND CSS
+    ============================== -->
+
+    <link rel="stylesheet" href="./assets/css/output.css" />
+
+    <!-- ==============================
+         FONT AWESOME
+    ============================== -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-background text-heading portfolio-loading">
+    <!-- ==========================================
+         INTRO LOADER
+         Phase 1 - Portfolio Upgrade
+    =========================================== -->
+    <div
+      id="portfolio-loader"
+      class="portfolio-loader"
+      role="status"
+      aria-live="polite"
+      aria-label="Loading portfolio"
+    >
+      <div class="portfolio-loader__content">
+        <!-- 
+            <div class="portfolio-loader__eyebrow" data-i18n="loaderEyebrow">
+                ALGI PRATAMA · DIGITAL PORTFOLIO
+            </div> -->
+
+        <div class="portfolio-loader__logo-wrap">
+          <span
+            class="portfolio-loader__orbit portfolio-loader__orbit--one"
+          ></span>
+          <span
+            class="portfolio-loader__orbit portfolio-loader__orbit--two"
+          ></span>
+          <span
+            class="portfolio-loader__ring portfolio-loader__ring--outer"
+          ></span>
+          <span
+            class="portfolio-loader__ring portfolio-loader__ring--inner"
+          ></span>
+          <span class="portfolio-loader__scan"></span>
+
+          <img
+            src="assets/images/logos/Logo_AP.webp"
+            alt="Algi Pratama Logo"
+            width="72"
+            height="72"
+            decoding="async"
+            fetchpriority="high"
+            class="portfolio-loader__logo"
+          />
+        </div>
+
+        <p class="portfolio-loader__welcome" data-i18n="loaderWelcome">
+          Welcome to My Portfolio
+        </p>
+
+        <p class="portfolio-loader__name" data-i18n="loaderName">
+          Algi Pratama Sasra
+        </p>
+
+        <div class="portfolio-loader__progress-shell">
+          <div class="portfolio-loader__progress" aria-hidden="true">
+            <span id="portfolio-loader-progress-bar"></span>
+          </div>
+          <span
+            id="portfolio-loader-progress-value"
+            class="portfolio-loader__progress-value"
+            aria-hidden="true"
+            >0%</span
+          >
+        </div>
+
+        <p class="portfolio-loader__status" data-i18n="loaderStatus">
+          Loading experience...
+        </p>
+      </div>
+    </div>
+
+    <div class="animated-grid"></div>
+
+    <div id="scroll-progress"></div>
+
+    <div class="animated-grid"></div>
+    <!-- ========================= -->
+    <!-- Header -->
+    <!-- ========================= -->
+    <header>
+      <!-- ==========================================
+     NAVBAR
+========================================== -->
+
+      <nav
+        id="navbar"
+        class="fixed top-0 left-0 z-50 w-full border-b border-transparent transition-all duration-300"
+      >
+        <div
+          class="container mx-auto flex h-20 items-center justify-between px-6"
+        >
+          <!-- ==========================================
+         BRAND / LOGO
+    =========================================== -->
+
+          <a href="#about" class="group flex items-center gap-3">
+            <!-- Logo -->
+
+            <div
+              class="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl border border-slate-700 bg-slate-900/80 transition-all duration-300 group-hover:border-primary group-hover:shadow-[0_0_25px_rgba(59,130,246,.35)]"
+            >
+              <img
+                src="assets/images/logos/Logo_AP.png"
+                alt="Algi Pratama Logo"
+                class="logo-spin h-full w-full object-cover group-hover:scale-110"
+              />
+            </div>
+
+            <!-- Brand Text -->
+
+            <div class="flex flex-col">
+              <span
+                class="text-lg font-bold leading-tight tracking-wide text-heading transition-colors duration-300 group-hover:text-primary"
+              >
+                ALGI PRATAMA SASRA
+              </span>
+
+              <span
+                class="text-[10px] font-medium uppercase tracking-[0.18em] text-paragraph"
+                data-i18n="brandRole"
+              >
+                Web Developer • AI Enthusiast
+              </span>
+            </div>
+          </a>
+
+          <!-- ==========================================
+         DESKTOP MENU
+    =========================================== -->
+
+          <ul class="hidden items-center gap-7 text-sm font-medium lg:flex">
+            <!-- ABOUT -->
+
+            <li>
+              <a
+                href="#about"
+                class="nav-link transition-colors hover:text-primary"
+                data-i18n="navAbout"
+              >
+                About
+              </a>
+            </li>
+
+            <!-- EXPERIENCE -->
+
+            <li>
+              <a
+                href="#experience"
+                class="nav-link transition-colors hover:text-primary"
+                data-i18n="navExperience"
+              >
+                Experience
+              </a>
+            </li>
+
+            <!-- INTERNSHIP -->
+
+            <li>
+              <a
+                href="#internship"
+                class="nav-link transition-colors hover:text-primary"
+                data-i18n="navInternship"
+              >
+                Internship
+              </a>
+            </li>
+
+            <!-- SKILLS -->
+
+            <li>
+              <a
+                href="#skills"
+                class="nav-link transition-colors hover:text-primary"
+                data-i18n="navSkills"
+              >
+                Skills
+              </a>
+            </li>
+
+            <!-- CERTIFICATION -->
+
+            <li>
+              <a
+                href="#certification"
+                class="nav-link transition-colors hover:text-primary"
+                data-i18n="navCertification"
+              >
+                Certification
+              </a>
+            </li>
+
+            <!-- ORGANIZATIONS -->
+
+            <li>
+              <a
+                href="#organizations"
+                class="nav-link transition-colors hover:text-primary"
+                data-i18n="navOrganizations"
+              >
+                Organizations
+              </a>
+            </li>
+
+            <!-- PORTFOLIO -->
+
+            <li>
+              <a
+                href="#portfolio"
+                class="nav-link transition-colors hover:text-primary"
+                data-i18n="navPortfolio"
+              >
+                Portfolio
+              </a>
+            </li>
+
+            <!-- ==========================================
+             LANGUAGE SWITCHER
+        =========================================== -->
+
+            <li class="relative ml-2">
+              <button
+                id="languageToggle"
+                type="button"
+                class="flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-900/70 px-3 py-2 transition-all duration-300 hover:border-primary hover:bg-slate-800"
+              >
+                <i class="fa-solid fa-globe text-primary"></i>
+
+                <span id="currentLanguage"> English </span>
+
+                <i class="fa-solid fa-chevron-down text-xs text-paragraph"> </i>
+              </button>
+
+              <!-- Language Dropdown -->
+
+              <div
+                id="languageMenu"
+                class="invisible absolute right-0 z-50 mt-3 w-44 translate-y-2 rounded-xl border border-slate-700 bg-slate-900 shadow-xl backdrop-blur-md opacity-0 transition-all duration-300"
+              >
+                <button
+                  type="button"
+                  class="language-btn flex w-full items-center rounded-t-xl px-4 py-3 transition hover:bg-slate-800"
+                  data-lang="en"
+                >
+                  🇺🇸
+
+                  <span class="ml-3"> English </span>
+                </button>
+
+                <button
+                  type="button"
+                  class="language-btn flex w-full items-center rounded-b-xl px-4 py-3 transition hover:bg-slate-800"
+                  data-lang="id"
+                >
+                  🇮🇩
+
+                  <span class="ml-3"> Indonesia </span>
+                </button>
+              </div>
+            </li>
+          </ul>
+
+          <!-- ==========================================
+         MOBILE HAMBURGER
+    =========================================== -->
+
+          <button
+            id="menu-button"
+            type="button"
+            class="hamburger lg:hidden"
+            aria-label="Open Menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- ==========================
+         MOBILE MENU
+    =========================== -->
+
+      <div
+        id="mobile-menu"
+        class="mobile-bottom fixed left-0 top-20 z-40 w-full border-t border-border bg-surface lg:hidden"
+      >
+        <div class="container mx-auto flex flex-col px-6 py-6">
+          <!-- ==========================
+             MOBILE NAVIGATION
+        =========================== -->
+
+          <a href="#about" class="nav-link py-3" data-i18n="navAbout">
+            About
+          </a>
+
+          <a href="#experience" class="nav-link py-3" data-i18n="navExperience">
+            Experience
+          </a>
+
+          <a href="#internship" class="nav-link py-3" data-i18n="navInternship">
+            Internship
+          </a>
+
+          <a href="#skills" class="nav-link py-3" data-i18n="navSkills">
+            Skills
+          </a>
+
+          <a
+            href="#certification"
+            class="nav-link py-3"
+            data-i18n="navCertification"
+          >
+            Certification
+          </a>
+
+          <a
+            href="#organizations"
+            class="nav-link py-3"
+            data-i18n="navOrganizations"
+          >
+            Organizations
+          </a>
+
+          <a href="#portfolio" class="nav-link py-3" data-i18n="navPortfolio">
+            Portfolio
+          </a>
+
+          <!-- ==========================
+             MOBILE LANGUAGE
+        =========================== -->
+
+          <div class="relative mt-4 border-t border-border pt-4">
+            <button
+              id="mobileLanguageToggle"
+              type="button"
+              class="flex w-full items-center justify-between rounded-xl border border-slate-700 bg-slate-900/70 px-4 py-3 transition-all duration-300 hover:border-primary"
+            >
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-globe text-primary"> </i>
+
+                <span id="mobileCurrentLanguage" class="text-sm">
+                  English
+                </span>
+              </div>
+
+              <i class="fa-solid fa-chevron-down text-xs"> </i>
+            </button>
+
+            <!-- Mobile Language Dropdown -->
+
+            <div
+              id="mobileLanguageMenu"
+              class="mt-2 hidden overflow-hidden rounded-xl border border-slate-700 bg-slate-900"
+            >
+              <button
+                type="button"
+                class="language-btn flex w-full items-center gap-3 px-4 py-3 transition hover:bg-slate-800"
+                data-lang="en"
+              >
+                🇺🇸
+
+                <span> English </span>
+              </button>
+
+              <button
+                type="button"
+                class="language-btn flex w-full items-center gap-3 px-4 py-3 transition hover:bg-slate-800"
+                data-lang="id"
+              >
+                🇮🇩
+
+                <span> Indonesia </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========================= -->
+    <!-- Main -->
+    <!-- ========================= -->
+<main class="pt-20">
+    <!-- ==========================================
+     ABOUT
+    ========================================== -->
+    <section id="about" class="relative overflow-hidden py-24">
+        <div class="container mx-auto px-6">
+          <div class="about-layout reveal">
+            <!-- ==================================================
+                 COLUMN 1 — PROFILE
+            ================================================== -->
+      
+            <div class="about-profile-wrapper">
+              <!-- AMBIENT BACKGROUND -->
+              <div class="about-anime-aura" aria-hidden="true">
+                <img
+                  src="assets/images/about/anime-aura.jpg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+      
+              <!-- GLOW -->
+              <div
+                class="about-aura-glow about-aura-glow-purple"
+                aria-hidden="true"
+              ></div>
+      
+              <div
+                class="about-aura-glow about-aura-glow-cyan"
+                aria-hidden="true"
+              ></div>
+      
+              <!-- PARTICLES -->
+              <div class="about-aura-particles" aria-hidden="true">
+                <span class="about-particle particle-1"></span>
+                <span class="about-particle particle-2"></span>
+                <span class="about-particle particle-3"></span>
+                <span class="about-particle particle-4"></span>
+                <span class="about-particle particle-5"></span>
+                <span class="about-particle particle-6"></span>
+              </div>
+      
+              <!-- PROFILE CARD -->
+              <div class="about-profile-card">
+                <div class="about-profile-image">
+                  <img
+                    src="assets/images/profile/profile.webp"
+                    alt="Algi Pratama"
+                    loading="eager"
+                    decoding="async"
+                  />
+                </div>
+      
+                <div class="about-profile-info">
+                  <h3 class="about-profile-name">
+                    ALGI PRATAMA SASRA
+                  </h3>
+      
+                  <p
+                    class="about-profile-role"
+                    data-i18n="aboutProfileRole"
+                  >
+                    Web Developer • IT Support • AI Enthusiast
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- ==================================================
+                 COLUMN 2 — ABOUT CONTENT
+            ================================================== -->
+      
+            <div class="about-content">
+              <!-- LABEL -->
+              <span
+                class="about-label"
+                data-i18n="aboutLabel"
+              >
+                ABOUT ME
+              </span>
+      
+              <!-- TITLE -->
+              <!--
+              <h1 class="about-title">
+                I'm
+                <span>Algi</span>
+              </h1>
+              -->
+      
+              <!-- MOBILE CHARACTER -->
+              <div class="about-mobile-character">
+                <div class="about-mobile-character-stage">
+                  <img
+                    src="assets/images/profile/Algi_character.webp"
+                    alt="Algi character"
+                    class="about-mobile-character-image"
+                    loading="lazy"
+                    decoding="async"
+                    data-i18n-aria="aboutCharacterAria"
+                  />
+                </div>
+              </div>
+      
+              <!-- INTRO -->
+              <p
+                class="about-intro"
+                data-i18n="aboutIntro"
+              >
+                Web Developer and IT Support enthusiast focused on
+                building practical digital solutions, responsive
+                websites, and reliable IT systems. Also experienced
+                in IT support, including hardware, software, network,
+                and CCTV troubleshooting. Currently focused on
+                developing skills in web development and AI technology.
+              </p>
+      
+              <!-- ==================================================
+                   INFORMATION CARDS
+              ================================================== -->
+      
+              <div class="about-info-grid">
+      
+                <!-- EDUCATION -->
+                <article class="about-info-card">
+                  <div class="about-info-icon blue">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                  </div>
+      
+                  <div>
+                    <span
+                      class="about-info-label"
+                      data-i18n="aboutEducationLabel"
+                    >
+                      PENDIDIKAN
+                    </span>
+      
+                    <h3
+                      data-i18n="aboutEducationTitle"
+                    >
+                      DIII Manajemen Informatika
+                    </h3>
+      
+                    <p
+                      data-i18n="aboutEducationValue"
+                    >
+                      Politeknik LP3I Padang
+                    </p>
+                  </div>
+                </article>
+      
+                <!-- INTERNSHIP -->
+                <article class="about-info-card">
+                  <div class="about-info-icon blue">
+                    <i class="fa-solid fa-briefcase"></i>
+                  </div>
+      
+                  <div>
+                    <span
+                      class="about-info-label"
+                      data-i18n="aboutInternshipLabel"
+                    >
+                      MAGANG
+                    </span>
+      
+                    <h3
+                      data-i18n="aboutInternshipTitle"
+                    >
+                      PT KAI (Persero) Divre II Sumatera Barat
+                    </h3>
+      
+                    <p
+                      data-i18n="aboutInternshipValue"
+                    >
+                      IT Support & Infrastructure
+                    </p>
+                  </div>
+                </article>
+      
+                <!-- TECHNICAL EXPERIENCE -->
+                <article class="about-info-card">
+                  <div class="about-info-icon cyan">
+                    <i class="fa-solid fa-network-wired"></i>
+                  </div>
+      
+                  <div>
+                    <span
+                      class="about-info-label cyan-text"
+                      data-i18n="aboutTechnicalLabel"
+                    >
+                      PENGALAMAN TEKNIS
+                    </span>
+      
+                    <h3
+                      data-i18n="aboutTechnicalTitle"
+                    >
+                      Network & CCTV
+                    </h3>
+      
+                    <p
+                      data-i18n="aboutTechnicalValue"
+                    >
+                      Dukungan & Infrastruktur IT
+                    </p>
+                  </div>
+                </article>
+      
+                <!-- AVAILABILITY -->
+                <article class="about-info-card">
+                  <div class="about-info-icon green">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+      
+                  <div>
+                    <span
+                      class="about-info-label green-text"
+                      data-i18n="aboutAvailabilityLabel"
+                    >
+                      TERSEDIANYA
+                    </span>
+      
+                    <h3
+                      data-i18n="aboutAvailabilityTitle"
+                    >
+                      Tersedia
+                    </h3>
+      
+                    <p
+                      data-i18n="aboutAvailabilityValue"
+                    >
+                      Pekerja Lepas & Penuh Waktu
+                    </p>
+                  </div>
+                </article>
+      
+              </div>
+      
+              <!-- ==================================================
+                   ACTIONS
+              ================================================== -->
+      
+              <div class="about-actions">
+      
+                <!-- CV -->
+                <a
+                  href="assets/documents/AlgiPratamaSasra_CV.pdf"
+                  download
+                  class="about-button about-button-primary"
+                  data-i18n-aria="aboutDownloadCv"
+                >
+                  <i class="fa-solid fa-download"></i>
+      
+                  <span
+                    data-i18n="aboutDownloadCv"
+                  >
+                    Unduh CV
+                  </span>
+                </a>
+      
+                <!-- GITHUB -->
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="about-button about-button-primary"
+                  data-i18n-aria="aboutGithub"
+                >
+                  <i class="fa-brands fa-github"></i>
+      
+                  <span
+                    data-i18n="aboutGithub"
+                  >
+                    GitHub
+                  </span>
+                </a>
+      
+                <!-- LINKEDIN -->
+                <a
+                  href="https://www.linkedin.com/in/algi-pratama-sasra-7a23432b2/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="about-button about-button-primary"
+                  data-i18n-aria="aboutLinkedin"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+      
+                  <span
+                    data-i18n="aboutLinkedin"
+                  >
+                    LinkedIn
+                  </span>
+                </a>
+      
+                <!-- INSTAGRAM -->
+                <a
+                  href="https://www.instagram.com/algipratamasasra_/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="about-button about-button-primary"
+                  data-i18n-aria="aboutInstagram"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+      
+                  <span
+                    data-i18n="aboutInstagram"
+                  >
+                    Instagram
+                  </span>
+                </a>
+      
+              </div>
+            </div>
+      
+            <!-- ==================================================
+                 COLUMN 3 — ALGI CHARACTER
+            ================================================== -->
+      
+            <div class="about-character-side">
+              <div
+                class="about-character-glow"
+                aria-hidden="true"
+              ></div>
+      
+              <div class="about-character-stage">
+                <img
+                  src="assets/images/profile/Algi_character.webp"
+                  alt="Algi character"
+                  class="algi-character-image"
+                  loading="eager"
+                  decoding="async"
+                  data-i18n-aria="aboutCharacterAria"
+                />
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+    <!-- =========================================
+     EXPERIENCE
+    ========================================= -->
+    <section id="experience" class="relative overflow-hidden py-20">
+        <div class="container mx-auto px-6">
+      
+          <!-- SECTION HEADER -->
+          <div class="mx-auto mb-10 max-w-2xl text-center reveal">
+      
+            <span
+              class="mb-2 inline-block text-xs font-semibold uppercase tracking-[0.2em] text-primary"
+              data-i18n="experienceLabel"
+            >
+              Experience
+            </span>
+      
+            <h2
+              class="text-3xl font-bold text-heading md:text-4xl"
+              data-i18n="experienceTitle"
+            >
+              Professional Journey
+            </h2>
+      
+            <p
+              class="mx-auto mt-3 max-w-xl text-sm leading-6 text-paragraph"
+              data-i18n="experienceDescription"
+            >
+              Experience in web development and practical digital solutions.
+            </p>
+      
+          </div>
+      
+          <!-- EXPERIENCE GRID -->
+          <div class="experience-layout reveal">
+      
+            <!-- ======================================
+                 PROFESSIONAL EXPERIENCE
+            ======================================= -->
+      
+            <article class="experience-main-card">
+      
+              <!-- TOP META -->
+              <div class="experience-card-header">
+      
+                <span class="experience-period">
+                  2023 — Present
+                </span>
+      
+                <span
+                  class="experience-status"
+                  data-i18n="experienceStatus"
+                >
+                  <span class="experience-status-dot"></span>
+                  Active
+                </span>
+      
+              </div>
+      
+              <!-- TITLE -->
+              <h3
+                class="experience-title"
+                data-i18n="experienceJobTitle"
+              >
+                Freelance Web Developer
+              </h3>
+      
+              <!-- TYPE -->
+              <p
+                class="experience-company"
+                data-i18n="experienceCompany"
+              >
+                Self Employed
+              </p>
+      
+              <!-- DESCRIPTION -->
+              <p
+                class="experience-description"
+                data-i18n="experienceJobDescription"
+              >
+                Building responsive websites and business applications
+                with a focus on clean architecture, usability, and performance.
+              </p>
+      
+              <!-- PROFESSIONAL FOCUS -->
+              <div class="experience-focus">
+      
+                <span
+                  class="experience-label"
+                  data-i18n="experienceFocusLabel"
+                >
+                  Professional Focus
+                </span>
+      
+                <div class="experience-focus-grid">
+      
+                  <!-- WEB DEVELOPMENT -->
+                  <div class="experience-focus-item">
+                    <i class="fa-solid fa-code"></i>
+      
+                    <div>
+                      <strong
+                        data-i18n="experienceWebDevelopment"
+                      >
+                        Web Development
+                      </strong>
+      
+                      <span
+                        data-i18n="experienceWebDevelopmentDescription"
+                      >
+                        Responsive & scalable websites
+                      </span>
+                    </div>
+                  </div>
+      
+                  <!-- PERFORMANCE -->
+                  <div class="experience-focus-item">
+                    <i class="fa-solid fa-gauge-high"></i>
+      
+                    <div>
+                      <strong
+                        data-i18n="experiencePerformance"
+                      >
+                        Performance
+                      </strong>
+      
+                      <span
+                        data-i18n="experiencePerformanceDescription"
+                      >
+                        Fast & efficient interfaces
+                      </span>
+                    </div>
+                  </div>
+      
+                  <!-- CLEAN ARCHITECTURE -->
+                  <div class="experience-focus-item">
+                    <i class="fa-solid fa-layer-group"></i>
+      
+                    <div>
+                      <strong
+                        data-i18n="experienceCleanArchitecture"
+                      >
+                        Clean Architecture
+                      </strong>
+      
+                      <span
+                        data-i18n="experienceCleanArchitectureDescription"
+                      >
+                        Maintainable project structure
+                      </span>
+                    </div>
+                  </div>
+      
+                  <!-- PROBLEM SOLVING -->
+                  <div class="experience-focus-item">
+                    <i class="fa-solid fa-lightbulb"></i>
+      
+                    <div>
+                      <strong
+                        data-i18n="experienceProblemSolving"
+                      >
+                        Problem Solving
+                      </strong>
+      
+                      <span
+                        data-i18n="experienceProblemSolvingDescription"
+                      >
+                        Practical business solutions
+                      </span>
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+            </article>
+      
+            <!-- ======================================
+                 CORE EXPERTISE
+            ======================================= -->
+      
+            <aside class="experience-expertise-card">
+      
+              <div class="experience-expertise-icon">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+      
+              <span
+                class="experience-label"
+                data-i18n="experienceCoreExpertise"
+              >
+                Core Expertise
+              </span>
+      
+              <h3
+                class="experience-expertise-title"
+                data-i18n="experienceTechnicalExpertise"
+              >
+                Technical Expertise
+              </h3>
+      
+              <p
+                class="experience-expertise-description"
+                data-i18n="experienceTechnicalDescription"
+              >
+                Technologies and practices I use to build reliable
+                digital solutions.
+              </p>
+      
+              <!-- SKILLS -->
+              <div class="experience-skill-list">
+      
+                <span class="experience-skill">
+                  Laravel
+                </span>
+      
+                <span class="experience-skill">
+                  PHP
+                </span>
+      
+                <span class="experience-skill">
+                  JavaScript
+                </span>
+      
+                <span class="experience-skill">
+                  Tailwind CSS
+                </span>
+      
+                <span class="experience-skill">
+                  HTML5
+                </span>
+      
+                <span class="experience-skill">
+                  MySQL
+                </span>
+      
+                <span class="experience-skill">
+                  Python
+                </span>
+      
+                <span class="experience-skill">
+                  Git
+                </span>
+      
+              </div>
+      
+              <!-- PRINCIPLES -->
+              <div class="experience-principles">
+      
+                <div class="experience-principle">
+                  <i class="fa-solid fa-circle-check"></i>
+      
+                  <span
+                    data-i18n="experienceResponsiveMobile"
+                  >
+                    Responsive & Mobile First
+                  </span>
+                </div>
+      
+                <div class="experience-principle">
+                  <i class="fa-solid fa-circle-check"></i>
+      
+                  <span
+                    data-i18n="experienceCleanMaintainable"
+                  >
+                    Clean & Maintainable Code
+                  </span>
+                </div>
+      
+                <div class="experience-principle">
+                  <i class="fa-solid fa-circle-check"></i>
+      
+                  <span
+                    data-i18n="experienceBusinessProblemSolving"
+                  >
+                    Business-Oriented Problem Solving
+                  </span>
+                </div>
+      
+                <div class="experience-principle">
+                  <i class="fa-solid fa-circle-check"></i>
+      
+                  <span
+                    data-i18n="experienceContinuousLearning"
+                  >
+                    Continuous Learning
+                  </span>
+                </div>
+      
+              </div>
+      
+            </aside>
+      
+          </div>
+        </div>
+    </section>
+    <!-- ==========================================
+     INTERNSHIP
+    ========================================== -->
+    <section id="internship" class="relative overflow-hidden py-24">
+        <div class="container mx-auto px-6">
+      
+          <!-- =========================
+             HEADER
+          ========================== -->
+          <div class="mx-auto mb-14 max-w-3xl text-center reveal">
+            <span
+              class="mb-2 inline-block text-xs font-semibold uppercase tracking-[0.2em] text-primary"
+              data-i18n="internshipLabel"
+            >
+              Internship
+            </span>
+      
+            <h2
+              class="internship-section-title"
+              data-i18n="internshipTitle"
+            >
+              Internship Experience
+            </h2>
+          </div>
+      
+      
+          <!-- =========================
+             EXPERIENCE CARD
+          ========================== -->
+          <article class="internship-featured reveal">
+      
+            <!-- LEFT : INFORMATION -->
+            <div class="internship-content">
+      
+              <span
+                class="internship-period"
+                data-i18n="internshipPeriod"
+              >
+                September 2023 — December 2023
+              </span>
+      
+      
+              <h3
+                class="internship-title"
+                data-i18n="internshipJobTitle"
+              >
+                IT Support / Information Systems Intern
+              </h3>
+      
+      
+              <p class="internship-company">
+                PT KAI (Persero) Divre II West Sumatra
+              </p>
+      
+      
+              <p
+                class="internship-description"
+                data-i18n="internshipDescription"
+              >
+                Assisted with network maintenance, hardware and software
+                troubleshooting, user support, CCTV maintenance, and IT
+                infrastructure activities under the guidance of an IT mentor.
+              </p>
+      
+      
+              <!-- RESPONSIBILITIES -->
+              <div class="internship-responsibilities">
+      
+                <div class="internship-responsibility">
+                  <span class="internship-responsibility-icon">
+                    <i class="fa-solid fa-network-wired"></i>
+                  </span>
+      
+                  <span data-i18n="internshipResponsibilityNetwork">
+                    Network maintenance and installation
+                  </span>
+                </div>
+      
+      
+                <div class="internship-responsibility">
+                  <span class="internship-responsibility-icon">
+                    <i class="fa-solid fa-computer"></i>
+                  </span>
+      
+                  <span data-i18n="internshipResponsibilityHardware">
+                    Hardware and software troubleshooting
+                  </span>
+                </div>
+      
+      
+                <div class="internship-responsibility">
+                  <span class="internship-responsibility-icon">
+                    <i class="fa-solid fa-video"></i>
+                  </span>
+      
+                  <span data-i18n="internshipResponsibilityCctv">
+                    CCTV monitoring and maintenance
+                  </span>
+                </div>
+      
+      
+                <div class="internship-responsibility">
+                  <span class="internship-responsibility-icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                  </span>
+      
+                  <span data-i18n="internshipResponsibilityInfrastructure">
+                    IT infrastructure support
+                  </span>
+                </div>
+      
+              </div>
+      
+      
+              <!-- AREAS -->
+              <div class="internship-skills">
+      
+                <span
+                  class="internship-label"
+                  data-i18n="internshipAreasLabel"
+                >
+                  Areas of Experience
+                </span>
+      
+      
+                <div class="internship-tech-list">
+      
+                  <span
+                    class="project-tech"
+                    data-i18n="internshipAreaNetworking"
+                  >
+                    Networking
+                  </span>
+      
+                  <span
+                    class="project-tech"
+                    data-i18n="internshipAreaHardware"
+                  >
+                    Hardware
+                  </span>
+      
+                  <span
+                    class="project-tech"
+                    data-i18n="internshipAreaSoftware"
+                  >
+                    Software
+                  </span>
+      
+                  <span
+                    class="project-tech"
+                    data-i18n="internshipAreaItSupport"
+                  >
+                    IT Support
+                  </span>
+      
+                  <span
+                    class="project-tech"
+                    data-i18n="internshipAreaCctv"
+                  >
+                    CCTV
+                  </span>
+      
+                  <span
+                    class="project-tech"
+                    data-i18n="internshipAreaTroubleshooting"
+                  >
+                    Troubleshooting
+                  </span>
+      
+                </div>
+              </div>
+      
+            </div>
+          </article>
+      
+      
+          <!-- =========================
+             DOCUMENTATION HEADER
+          ========================== -->
+          <div class="internship-documentation-header reveal">
+      
+            <div>
+      
+              <h3
+                class="internship-documentation-title"
+                data-i18n="internshipDocumentationTitle"
+              >
+                Internship Documentation
+              </h3>
+      
+              <p
+                class="internship-documentation-description"
+                data-i18n="internshipDocumentationDescription"
+              >
+                Selected documentation from my internship experience at PT KAI.
+              </p>
+      
+            </div>
+      
+          </div>
+      
+      
+          <!-- =========================
+             INFINITE DOCUMENTATION
+          ========================== -->
+          <div class="internship-marquee reveal">
+      
+            <div class="internship-marquee-track">
+      
+              <!-- GROUP 1 -->
+              <div class="internship-marquee-group">
+      
+                <button
+                  type="button"
+                  class="internship-photo-card"
+                  data-internship-image="0"
+                >
+                  <div class="internship-photo-image">
+      
+                    <img
+                      src="assets/images/Internship/gb2.jpg"
+                      alt="Internship documentation 1"
+                      data-i18n-alt="internshipDocumentationImage1"
+                      loading="lazy"
+                      decoding="async"
+                    />
+      
+                    <div class="internship-photo-overlay">
+                      <span>
+                        <i class="fa-solid fa-expand"></i>
+                      </span>
+                    </div>
+      
+                  </div>
+                </button>
+      
+      
+                <button
+                  type="button"
+                  class="internship-photo-card"
+                  data-internship-image="1"
+                >
+                  <div class="internship-photo-image">
+      
+                    <img
+                      src="assets/images/Internship/gb3.jpg"
+                      alt="Internship documentation 2"
+                      data-i18n-alt="internshipDocumentationImage2"
+                      loading="lazy"
+                      decoding="async"
+                    />
+      
+                    <div class="internship-photo-overlay">
+                      <span>
+                        <i class="fa-solid fa-expand"></i>
+                      </span>
+                    </div>
+      
+                  </div>
+                </button>
+      
+      
+                <button
+                  type="button"
+                  class="internship-photo-card"
+                  data-internship-image="2"
+                >
+                  <div class="internship-photo-image">
+      
+                    <img
+                      src="assets/images/Internship/gb4.jpg"
+                      alt="Internship documentation 3"
+                      data-i18n-alt="internshipDocumentationImage3"
+                      loading="lazy"
+                      decoding="async"
+                    />
+      
+                    <div class="internship-photo-overlay">
+                      <span>
+                        <i class="fa-solid fa-expand"></i>
+                      </span>
+                    </div>
+      
+                  </div>
+                </button>
+      
+      
+                <button
+                  type="button"
+                  class="internship-photo-card"
+                  data-internship-image="3"
+                >
+                  <div class="internship-photo-image">
+      
+                    <img
+                      src="assets/images/Internship/gb5.jpg"
+                      alt="Internship documentation 4"
+                      data-i18n-alt="internshipDocumentationImage4"
+                      loading="lazy"
+                      decoding="async"
+                    />
+      
+                    <div class="internship-photo-overlay">
+                      <span>
+                        <i class="fa-solid fa-expand"></i>
+                      </span>
+                    </div>
+      
+                  </div>
+                </button>
+      
+      
+                <button
+                  type="button"
+                  class="internship-photo-card"
+                  data-internship-image="4"
+                >
+                  <div class="internship-photo-image">
+      
+                    <img
+                      src="assets/images/Internship/gb6.jpg"
+                      alt="Internship documentation 5"
+                      data-i18n-alt="internshipDocumentationImage5"
+                      loading="lazy"
+                      decoding="async"
+                    />
+      
+                    <div class="internship-photo-overlay">
+                      <span>
+                        <i class="fa-solid fa-expand"></i>
+                      </span>
+                    </div>
+      
+                  </div>
+                </button>
+      
+              </div>
+      
+      
+              <!-- GROUP 2 : DUPLICATE UNTUK LOOP SEAMLESS -->
+              <div
+                class="internship-marquee-group"
+                aria-hidden="true"
+              >
+      
+                <button
+                  type="button"
+                  class="internship-photo-card"
+                  data-internship-image="0"
+                  tabindex="-1"
+                >
+                  <div class="internship-photo-image">
+      
+                    <img
+                      src="assets/images/Internship/gb2.jpg"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+      
+                    <div class="internship-photo-overlay">
+                      <span>
+                        <i class="fa-solid fa-expand"></i>
+                      </span>
+                    </div>
+      
+                  </div>
+                </button>
+      
+      
+                <button
+                  type="button"
+                  class="internship-photo-card"
+                  data-internship-image="1"
+                  tabindex="-1"
+                >
+                  <div class="internship-photo-image">
+      
+                    <img
+                      src="assets/images/Internship/gb3.jpg"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+      
+                    <div class="internship-photo-overlay">
+                      <span>
+                        <i class="fa-solid fa-expand"></i>
+                      </span>
+                    </div>
+      
+                  </div>
+                </button>
+      
+      
+                <button
+                  type="button"
+                  class="internship-photo-card"
+                  data-internship-image="2"
+                  tabindex="-1"
+                >
+                  <div class="internship-photo-image">
+      
+                    <img
+                      src="assets/images/Internship/gb4.jpg"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+      
+                    <div class="internship-photo-overlay">
+                      <span>
+                        <i class="fa-solid fa-expand"></i>
+                      </span>
+                    </div>
+      
+                  </div>
+                </button>
+      
+      
+                <button
+                  type="button"
+                  class="internship-photo-card"
+                  data-internship-image="3"
+                  tabindex="-1"
+                >
+                  <div class="internship-photo-image">
+      
+                    <img
+                      src="assets/images/Internship/gb5.jpg"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+      
+                    <div class="internship-photo-overlay">
+                      <span>
+                        <i class="fa-solid fa-expand"></i>
+                      </span>
+                    </div>
+      
+                  </div>
+                </button>
+      
+      
+                <button
+                  type="button"
+                  class="internship-photo-card"
+                  data-internship-image="4"
+                  tabindex="-1"
+                >
+                  <div class="internship-photo-image">
+      
+                    <img
+                      src="assets/images/Internship/gb6.jpg"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+      
+                    <div class="internship-photo-overlay">
+                      <span>
+                        <i class="fa-solid fa-expand"></i>
+                      </span>
+                    </div>
+      
+                  </div>
+                </button>
+      
+              </div>
+      
+            </div>
+          </div>
+      
+        </div>
+    </section>
+    <!-- =========================
+     SKILLS SECTION
+    ========================= -->
+    <section id="skills" class="relative overflow-hidden py-24">
+        <div class="container mx-auto px-6">
+      
+          <!-- HEADER -->
+          <div class="mx-auto mb-14 max-w-2xl text-center reveal">
+      
+            <span
+              class="mb-3 inline-block text-sm font-semibold uppercase tracking-[1em] text-primary"
+              data-i18n="skillsLabel"
+            >
+              Skills
+            </span>
+      
+            <h2
+              class="text-3xl font-bold text-heading md:text-4xl"
+              data-i18n="skillsTitle"
+            >
+              Technologies I Work With
+            </h2>
+      
+            <p
+              class="mt-4 text-paragraph"
+              data-i18n="skillsDescription"
+            >
+              Tools and technologies I use to build websites, applications, and
+              IT solutions.
+            </p>
+      
+          </div>
+      
+      
+          <!-- ==========================================
+             SKILL MARQUEE 1
+          =========================================== -->
+          <div class="skills-marquee skills-marquee-left">
+      
+            <div class="skills-track">
+      
+              <!-- SET 1 -->
+      
+              <div class="skill-card skill-php">
+                <i class="fa-brands fa-php"></i>
+                <span>PHP</span>
+              </div>
+      
+              <div class="skill-card skill-laravel">
+                <i class="fa-brands fa-laravel"></i>
+                <span>Laravel</span>
+              </div>
+      
+              <div class="skill-card skill-javascript">
+                <i class="fa-brands fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+      
+              <div class="skill-card skill-bootstrap">
+                <i class="fa-brands fa-bootstrap"></i>
+                <span>Bootstrap</span>
+              </div>
+      
+              <div class="skill-card skill-mysql">
+                <i class="fa-solid fa-database"></i>
+                <span>MySQL</span>
+              </div>
+      
+              <div class="skill-card skill-git">
+                <i class="fa-brands fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+      
+              <div class="skill-card skill-github">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </div>
+      
+      
+              <!-- DUPLICATE -->
+      
+              <div class="skill-card skill-php">
+                <i class="fa-brands fa-php"></i>
+                <span>PHP</span>
+              </div>
+      
+              <div class="skill-card skill-laravel">
+                <i class="fa-brands fa-laravel"></i>
+                <span>Laravel</span>
+              </div>
+      
+              <div class="skill-card skill-javascript">
+                <i class="fa-brands fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+      
+              <div class="skill-card skill-bootstrap">
+                <i class="fa-brands fa-bootstrap"></i>
+                <span>Bootstrap</span>
+              </div>
+      
+              <div class="skill-card skill-mysql">
+                <i class="fa-solid fa-database"></i>
+                <span>MySQL</span>
+              </div>
+      
+              <div class="skill-card skill-git">
+                <i class="fa-brands fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+      
+              <div class="skill-card skill-github">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </div>
+      
+            </div>
+          </div>
+      
+      
+          <!-- ==========================================
+             SKILL MARQUEE 2
+          =========================================== -->
+          <div class="skills-marquee skills-marquee-right mt-5">
+      
+            <div class="skills-track">
+      
+              <!-- SET 1 -->
+      
+              <div class="skill-card skill-networking">
+                <i class="fa-solid fa-network-wired"></i>
+                <span>Networking</span>
+              </div>
+      
+              <div class="skill-card skill-wordpress">
+                <i class="fa-brands fa-wordpress"></i>
+                <span>WordPress</span>
+              </div>
+      
+              <div class="skill-card skill-linux">
+                <i class="fa-brands fa-linux"></i>
+                <span>Linux</span>
+              </div>
+      
+              <div class="skill-card skill-server">
+                <i class="fa-solid fa-server"></i>
+                <span>Server</span>
+              </div>
+      
+              <div class="skill-card skill-itsupport">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>IT Support</span>
+              </div>
+      
+              <div class="skill-card skill-ai">
+                <i class="fa-solid fa-robot"></i>
+                <span>AI Tools</span>
+              </div>
+      
+              <div class="skill-card skill-web">
+                <i class="fa-solid fa-code"></i>
+                <span>Web Development</span>
+              </div>
+      
+      
+              <!-- DUPLICATE -->
+      
+              <div class="skill-card skill-networking">
+                <i class="fa-solid fa-network-wired"></i>
+                <span>Networking</span>
+              </div>
+      
+              <div class="skill-card skill-wordpress">
+                <i class="fa-brands fa-wordpress"></i>
+                <span>WordPress</span>
+              </div>
+      
+              <div class="skill-card skill-linux">
+                <i class="fa-brands fa-linux"></i>
+                <span>Linux</span>
+              </div>
+      
+              <div class="skill-card skill-server">
+                <i class="fa-solid fa-server"></i>
+                <span>Server</span>
+              </div>
+      
+              <div class="skill-card skill-itsupport">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>IT Support</span>
+              </div>
+      
+              <div class="skill-card skill-ai">
+                <i class="fa-solid fa-robot"></i>
+                <span>AI Tools</span>
+              </div>
+      
+              <div class="skill-card skill-web">
+                <i class="fa-solid fa-code"></i>
+                <span>Web Development</span>
+              </div>
+      
+            </div>
+          </div>
+      
+        </div>
+    </section>
+    <!-- =========================
+     Certification
+    ========================== -->
+    <section id="certification" class="relative overflow-hidden py-24">
+        <div class="container mx-auto px-6">
+      
+          <!-- HEADER -->
+          <div class="mx-auto mb-12 max-w-2xl text-center reveal">
+      
+            <span
+              class="mb-3 inline-block text-sm font-semibold uppercase tracking-[0.2em] text-primary"
+              data-i18n="certificationLabel"
+            >
+              Certification
+            </span>
+      
+            <h2
+              class="text-3xl font-bold text-heading md:text-4xl"
+              data-i18n="certificationTitle"
+            >
+              Professional Credentials
+            </h2>
+      
+            <p
+              class="mt-4 leading-7 text-paragraph"
+              data-i18n="certificationDescription"
+            >
+              Professional certifications and credentials that support my
+              technical skills and experience.
+            </p>
+      
+          </div>
+      
+      
+          <!-- CERTIFICATION GRID -->
+          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      
+      
+            <!-- =========================
+                 SOFTWARE DEVELOPMENT
+                 2 IMAGES
+            ========================== -->
+            <article
+              class="certification-card group"
+              data-certification="software-development"
+            >
+      
+              <button
+                type="button"
+                class="certification-preview"
+                aria-label="View Software Development certificates"
+                data-i18n-aria="certificationSoftwareDevelopmentAria"
+              >
+      
+                <img
+                  src="assets/images/certifications/SoftwareDevelopment.jpg"
+                  alt="Software Development certificate"
+                  data-i18n-alt="certificationSoftwareDevelopmentAlt"
+                  loading="lazy"
+                  decoding="async"
+                />
+      
+                <div class="certification-overlay">
+                  <span>
+                    <i class="fa-solid fa-images"></i>
+                    <span data-i18n="certificationViewCertificates">
+                      View Certificates
+                    </span>
+                  </span>
+                </div>
+      
+              </button>
+      
+      
+              <div class="certification-content">
+      
+                <span class="project-category">
+                  <span data-i18n="certificationCategorySoftwareDevelopment">
+                    Software Development
+                  </span>
+                </span>
+      
+                <h3 class="certification-title">
+                  Software Development
+                </h3>
+      
+                <p
+                  class="certification-description"
+                  data-i18n="certificationSoftwareDevelopmentDescription"
+                >
+                  Certification related to software development and programming.
+                </p>
+      
+              </div>
+            </article>
+      
+      
+            <!-- =========================
+                 DATA MANAGEMENT
+                 2 IMAGES
+            ========================== -->
+            <article
+              class="certification-card group"
+              data-certification="data-management"
+            >
+      
+              <button
+                type="button"
+                class="certification-preview"
+                aria-label="View Data Management Staff certificates"
+                data-i18n-aria="certificationDataManagementAria"
+              >
+      
+                <img
+                  src="assets/images/certifications/data management staff.jpg"
+                  alt="Data Management Staff certificate"
+                  data-i18n-alt="certificationDataManagementAlt"
+                  loading="lazy"
+                  decoding="async"
+                />
+      
+                <div class="certification-overlay">
+                  <span>
+                    <i class="fa-solid fa-images"></i>
+                    <span data-i18n="certificationViewCertificates">
+                      View Certificates
+                    </span>
+                  </span>
+                </div>
+      
+              </button>
+      
+      
+              <div class="certification-content">
+      
+                <span class="project-category">
+                  <span data-i18n="certificationCategoryProfessionalCertification">
+                    Professional Certification
+                  </span>
+                </span>
+      
+                <h3 class="certification-title">
+                  Data Management Staff
+                </h3>
+      
+                <p
+                  class="certification-description"
+                  data-i18n="certificationDataManagementDescription"
+                >
+                  Certificate of Competence in Office Application.
+                </p>
+      
+              </div>
+            </article>
+      
+      
+            <!-- =========================
+                 IT NETWORK
+            ========================== -->
+            <article
+              class="certification-card group"
+              data-certification="it-network"
+            >
+      
+              <button
+                type="button"
+                class="certification-preview"
+                aria-label="View Bootcamp IT Network certificate"
+                data-i18n-aria="certificationItNetworkAria"
+              >
+      
+                <img
+                  src="assets/images/certifications/BOOTCAMP IT NETWORK.jpg"
+                  alt="Bootcamp IT Network certificate"
+                  data-i18n-alt="certificationItNetworkAlt"
+                  loading="lazy"
+                  decoding="async"
+                />
+      
+                <div class="certification-overlay">
+                  <span>
+                    <i class="fa-solid fa-eye"></i>
+                    <span data-i18n="certificationViewCertificate">
+                      View Certificate
+                    </span>
+                  </span>
+                </div>
+      
+              </button>
+      
+      
+              <div class="certification-content">
+      
+                <span class="project-category">
+                  <span data-i18n="certificationCategoryProfessionalTraining">
+                    Professional Training
+                  </span>
+                </span>
+      
+                <h3 class="certification-title">
+                  Bootcamp IT Network
+                </h3>
+      
+                <p
+                  class="certification-description"
+                  data-i18n="certificationItNetworkDescription"
+                >
+                  Professional training in IT networking fundamentals.
+                </p>
+      
+              </div>
+            </article>
+      
+      
+            <!-- =========================
+                 IT SUPPORT
+            ========================== -->
+            <article
+              class="certification-card group"
+              data-certification="it-support"
+            >
+      
+              <button
+                type="button"
+                class="certification-preview"
+                aria-label="View Bootcamp IT Support certificate"
+                data-i18n-aria="certificationItSupportAria"
+              >
+      
+                <img
+                  src="assets/images/certifications/BOOTCAMP IT SUPPORT.jpg"
+                  alt="Bootcamp IT Support certificate"
+                  data-i18n-alt="certificationItSupportAlt"
+                  loading="lazy"
+                  decoding="async"
+                />
+      
+                <div class="certification-overlay">
+                  <span>
+                    <i class="fa-solid fa-eye"></i>
+                    <span data-i18n="certificationViewCertificate">
+                      View Certificate
+                    </span>
+                  </span>
+                </div>
+      
+              </button>
+      
+      
+              <div class="certification-content">
+      
+                <span class="project-category">
+                  <span data-i18n="certificationCategoryProfessionalTraining">
+                    Professional Training
+                  </span>
+                </span>
+      
+                <h3 class="certification-title">
+                  Bootcamp IT Support
+                </h3>
+      
+                <p
+                  class="certification-description"
+                  data-i18n="certificationItSupportDescription"
+                >
+                  Professional training focused on IT support and technical
+                  operations.
+                </p>
+      
+              </div>
+            </article>
+      
+      
+            <!-- =========================
+                 DASAR AI
+            ========================== -->
+            <article
+              class="certification-card group"
+              data-certification="dasar-ai"
+            >
+      
+              <button
+                type="button"
+                class="certification-preview"
+                aria-label="View Dasar AI certificate"
+                data-i18n-aria="certificationDasarAiAria"
+              >
+      
+                <img
+                  src="assets/images/certifications/Dasar AI.jpg"
+                  alt="Dasar AI certificate"
+                  data-i18n-alt="certificationDasarAiAlt"
+                  loading="lazy"
+                  decoding="async"
+                />
+      
+                <div class="certification-overlay">
+                  <span>
+                    <i class="fa-solid fa-eye"></i>
+                    <span data-i18n="certificationViewCertificate">
+                      View Certificate
+                    </span>
+                  </span>
+                </div>
+      
+              </button>
+      
+      
+              <div class="certification-content">
+      
+                <span class="project-category">
+                  <span data-i18n="certificationCategoryAiTechnology">
+                    AI & Technology
+                  </span>
+                </span>
+      
+                <h3 class="certification-title">
+                  Dasar AI
+                </h3>
+      
+                <p
+                  class="certification-description"
+                  data-i18n="certificationDasarAiDescription"
+                >
+                  Certification covering fundamental artificial intelligence
+                  concepts.
+                </p>
+      
+              </div>
+            </article>
+      
+      
+            <!-- =========================
+                 DATA SCIENCE
+            ========================== -->
+            <article
+              class="certification-card group"
+              data-certification="data-science"
+            >
+      
+              <button
+                type="button"
+                class="certification-preview"
+                aria-label="View Data Science certificate"
+                data-i18n-aria="certificationDataScienceAria"
+              >
+      
+                <img
+                  src="assets/images/certifications/data_science.jpeg"
+                  alt="Data Science certificate"
+                  data-i18n-alt="certificationDataScienceAlt"
+                  loading="lazy"
+                  decoding="async"
+                />
+      
+                <div class="certification-overlay">
+                  <span>
+                    <i class="fa-solid fa-eye"></i>
+                    <span data-i18n="certificationViewCertificate">
+                      View Certificate
+                    </span>
+                  </span>
+                </div>
+      
+              </button>
+      
+      
+              <div class="certification-content">
+      
+                <span class="project-category">
+                  <span data-i18n="certificationCategoryDataTechnology">
+                    Data & Technology
+                  </span>
+                </span>
+      
+                <h3 class="certification-title">
+                  Data Science
+                </h3>
+      
+                <p
+                  class="certification-description"
+                  data-i18n="certificationDataScienceDescription"
+                >
+                  Certification related to data science and analytical concepts.
+                </p>
+      
+              </div>
+            </article>
+      
+      
+            <!-- =========================
+                 ORACLE
+            ========================== -->
+            <article
+              class="certification-card group"
+              data-certification="oracle"
+            >
+      
+              <button
+                type="button"
+                class="certification-preview"
+                aria-label="View Oracle certificate"
+                data-i18n-aria="certificationOracleAria"
+              >
+      
+                <img
+                  src="assets/images/certifications/Oracle.jpg"
+                  alt="Oracle certificate"
+                  data-i18n-alt="certificationOracleAlt"
+                  loading="lazy"
+                  decoding="async"
+                />
+      
+                <div class="certification-overlay">
+                  <span>
+                    <i class="fa-solid fa-eye"></i>
+                    <span data-i18n="certificationViewCertificate">
+                      View Certificate
+                    </span>
+                  </span>
+                </div>
+      
+              </button>
+      
+      
+              <div class="certification-content">
+      
+                <span class="project-category">
+                  <span data-i18n="certificationCategoryDatabaseTechnology">
+                    Database & Technology
+                  </span>
+                </span>
+      
+                <h3 class="certification-title">
+                  Oracle
+                </h3>
+      
+                <p
+                  class="certification-description"
+                  data-i18n="certificationOracleDescription"
+                >
+                  Certification related to Oracle database technology.
+                </p>
+      
+              </div>
+            </article>
+      
+      
+            <!-- =========================
+                 07. ALIBABA CLOUD
+            ========================== -->
+            <article
+              class="certification-card group"
+              data-certification="alibaba-cloud"
+            >
+      
+              <button
+                type="button"
+                class="certification-preview"
+                aria-label="View Alibaba Cloud Developer certificate"
+                data-i18n-aria="certificationAlibabaCloudAria"
+              >
+      
+                <img
+                  src="assets/images/certifications/sertifikat developer AlibabaCloud.jpg"
+                  alt="Alibaba Cloud Developer certificate"
+                  data-i18n-alt="certificationAlibabaCloudAlt"
+                  loading="lazy"
+                  decoding="async"
+                />
+      
+                <div class="certification-overlay">
+                  <span>
+                    <i class="fa-solid fa-eye"></i>
+                    <span data-i18n="certificationViewCertificate">
+                      View Certificate
+                    </span>
+                  </span>
+                </div>
+      
+              </button>
+      
+      
+              <div class="certification-content">
+      
+                <span class="project-category">
+                  <span data-i18n="certificationCategoryCloudComputing">
+                    Cloud Computing
+                  </span>
+                </span>
+      
+                <h3 class="certification-title">
+                  Alibaba Cloud Developer
+                </h3>
+      
+                <p
+                  class="certification-description"
+                  data-i18n="certificationAlibabaCloudDescription"
+                >
+                  Certification related to cloud development technologies.
+                </p>
+      
+              </div>
+            </article>
+      
+          </div>
+        </div>
+    </section>
+    <!-- =========================
+     Certification Modal
+    ========================== -->
+      <div
+        id="certificationModal"
+        class="certification-modal"
+        aria-hidden="true"
+      >
+        <!-- BACKDROP -->
+        <div
+          class="certification-modal-backdrop"
+          data-close-certification
+        ></div>
+
+        <!-- MODAL CONTAINER -->
+        <div
+          class="certification-modal-container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="certificationModalTitle"
+        >
+          <!-- HEADER -->
+          <div class="certification-modal-header">
+            <div>
+              <span id="certificationModalCategory" class="project-category">
+                Professional Certification
+              </span>
+
+              <h3
+                id="certificationModalTitle"
+                class="certification-modal-title"
+              >
+                Certificate
+              </h3>
+            </div>
+
+            <button
+              type="button"
+              id="certificationModalClose"
+              class="certification-modal-close"
+              aria-label="Close Certificate"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <!-- GALLERY -->
+          <div
+            id="certificationModalGallery"
+            class="certification-modal-gallery"
+          ></div>
+        </div>
+      </div>
+
+    <!-- =========================
+     Organizations
+    ========================== -->
+    <section id="organizations" class="relative overflow-hidden py-24">
+        <div class="container mx-auto px-6">
+      
+          <!-- HEADER -->
+          <div class="mx-auto mb-12 max-w-2xl text-center reveal">
+      
+            <span
+              class="mb-3 inline-block text-sm font-semibold uppercase tracking-[0.2em] text-primary"
+              data-i18n="organizationsLabel"
+            >
+              Organizations
+            </span>
+      
+            <h2
+              class="text-3xl font-bold text-heading md:text-4xl"
+              data-i18n="organizationsTitle"
+            >
+              Organizational Experience
+            </h2>
+      
+            <p
+              class="mt-4 leading-7 text-paragraph"
+              data-i18n="organizationsDescription"
+            >
+              My organizational experience during college.
+            </p>
+      
+          </div>
+      
+      
+          <!-- ORGANIZATION -->
+          <article class="organization-featured reveal">
+      
+            <!-- YEAR -->
+            <span
+              class="organization-year"
+              data-i18n="organizationYear"
+            >
+              2021-2022
+            </span>
+      
+      
+            <!-- ORGANIZATION NAME -->
+            <h3 class="organization-title">
+              RTIK Politeknik LP3I Padang
+            </h3>
+      
+      
+            <!-- ROLE -->
+            <p
+              class="organization-role"
+              data-i18n="organizationRole"
+            >
+              Anggota Panitia Workshop Pemrograman, Hardware, dan Software
+            </p>
+      
+      
+            <!-- DESCRIPTION -->
+            <p
+              class="organization-description"
+              data-i18n="organizationDescription"
+            >
+              Berkontribusi dalam persiapan dan pelaksanaan kegiatan pelatihan
+              mahasiswa.
+            </p>
+      
+          </article>
+      
+        </div>
+    </section>
+    <!-- =========================
+     Portfolio
+    ========================== -->
+    <section id="portfolio" class="relative overflow-hidden py-24">
+        <div class="container mx-auto px-6">
+      
+          <!-- HEADER -->
+          <div class="mx-auto mb-12 max-w-2xl text-center reveal">
+      
+            <span
+              class="mb-3 inline-block text-sm font-semibold uppercase tracking-[0.2em] text-primary"
+              data-i18n="portfolioLabel"
+            >
+              Portfolio
+            </span>
+      
+            <h2
+              class="text-3xl font-bold text-heading md:text-4xl"
+              data-i18n="portfolioTitle"
+            >
+              My Projects
+            </h2>
+      
+            <p
+              class="mt-4 leading-7 text-paragraph"
+              data-i18n="portfolioDescription"
+            >
+              A collection of websites, applications, and digital projects I have
+              worked on.
+            </p>
+      
+          </div>
+      
+      
+          <!-- PROJECT GRID -->
+          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      
+            <!-- PROJECT 01 -->
+            <button
+              type="button"
+              class="portfolio-simple-card group"
+              data-project="kai"
+            >
+              <div class="portfolio-simple-image">
+      
+                <img
+                  src="assets/images/projects/KAI/KAI01.webp"
+                  alt="KAI project"
+                  data-i18n-alt="portfolioKAIAlt"
+                  loading="lazy"
+                  decoding="async"
+                />
+      
+                <div class="portfolio-simple-overlay">
+                  <span>
+                    <i class="fa-solid fa-eye"></i>
+                    <span data-i18n="portfolioViewProject">View Project</span>
+                  </span>
+                </div>
+      
+              </div>
+      
+              <div class="portfolio-simple-content">
+      
+                <span
+                  class="project-category"
+                  data-i18n="portfolioCategoryAcademic"
+                >
+                  Academic Project
+                </span>
+      
+                <h3 class="portfolio-simple-title">
+                  KAI
+                </h3>
+      
+                <p
+                  class="portfolio-simple-description"
+                  data-i18n="portfolioKAIDescription"
+                >
+                  A final academic project developed to apply web development
+                  concepts and practical programming skills.
+                </p>
+      
+              </div>
+            </button>
+      
+      
+            <!-- PROJECT 02 -->
+            <button
+              type="button"
+              class="portfolio-simple-card group"
+              data-project="erinaldo"
+            >
+              <div class="portfolio-simple-image">
+      
+                <img
+                  src="assets/images/projects/ENE/ene1.webp"
+                  alt="Erinaldo Nusa Energi project"
+                  data-i18n-alt="portfolioErinaldoAlt"
+                  loading="lazy"
+                  decoding="async"
+                />
+      
+                <div class="portfolio-simple-overlay">
+                  <span>
+                    <i class="fa-solid fa-eye"></i>
+                    <span data-i18n="portfolioViewProject">View Project</span>
+                  </span>
+                </div>
+      
+              </div>
+      
+              <div class="portfolio-simple-content">
+      
+                <span
+                  class="project-category"
+                  data-i18n="portfolioCategoryCompanyProfile"
+                >
+                  Company Profile
+                </span>
+      
+                <h3 class="portfolio-simple-title">
+                  Erinaldo Nusa Energi
+                </h3>
+      
+                <p
+                  class="portfolio-simple-description"
+                  data-i18n="portfolioErinaldoDescription"
+                >
+                  Responsive company profile website designed for business
+                  presentation.
+                </p>
+      
+              </div>
+            </button>
+      
+      
+            <!-- PROJECT 03 -->
+            <button
+              type="button"
+              class="portfolio-simple-card group"
+              data-project="kebab"
+            >
+              <div class="portfolio-simple-image">
+      
+                <img
+                  src="assets/images/projects/kebab abud/kb01.webp"
+                  alt="Kebab Abud's project"
+                  data-i18n-alt="portfolioKebabAlt"
+                  loading="lazy"
+                  decoding="async"
+                />
+      
+                <div class="portfolio-simple-overlay">
+                  <span>
+                    <i class="fa-solid fa-eye"></i>
+                    <span data-i18n="portfolioViewProject">View Project</span>
+                  </span>
+                </div>
+      
+              </div>
+      
+              <div class="portfolio-simple-content">
+      
+                <span
+                  class="project-category"
+                  data-i18n="portfolioCategoryWebsite"
+                >
+                  Website
+                </span>
+      
+                <h3 class="portfolio-simple-title">
+                  Kebab Abud's
+                </h3>
+      
+                <p
+                  class="portfolio-simple-description"
+                  data-i18n="portfolioKebabDescription"
+                >
+                  Franchise information website designed to present business
+                  information.
+                </p>
+      
+              </div>
+            </button>
+      
+      
+            <!-- PROJECT 04 -->
+            <button
+              type="button"
+              class="portfolio-simple-card group"
+              data-project="barokah"
+            >
+              <div class="portfolio-simple-image">
+      
+                <img
+                  src="assets/images/projects/Baracoco/bc1.webp"
+                  alt="PT Barokah Coco Indonesia project"
+                  data-i18n-alt="portfolioBarokahAlt"
+                  loading="lazy"
+                  decoding="async"
+                />
+      
+                <div class="portfolio-simple-overlay">
+                  <span>
+                    <i class="fa-solid fa-eye"></i>
+                    <span data-i18n="portfolioViewProject">View Project</span>
+                  </span>
+                </div>
+      
+              </div>
+      
+              <div class="portfolio-simple-content">
+      
+                <span
+                  class="project-category"
+                  data-i18n="portfolioCategoryCompanyProfile"
+                >
+                  Company Profile
+                </span>
+      
+                <h3 class="portfolio-simple-title">
+                  PT Barokah Coco Indonesia
+                </h3>
+      
+                <p
+                  class="portfolio-simple-description"
+                  data-i18n="portfolioBarokahDescription"
+                >
+                  Company profile and product presentation website.
+                </p>
+      
+              </div>
+            </button>
+      
+          </div>
+        </div>
+    </section>
+    <!-- ==========================================
+     PORTFOLIO PROJECT MODAL
+    ========================================== -->
+      <div id="portfolioModal" class="portfolio-modal" aria-hidden="true">
+        <div class="portfolio-modal-backdrop" data-close-modal></div>
+
+        <div class="portfolio-modal-container">
+          <!-- HEADER -->
+
+          <div class="portfolio-modal-header">
+            <div>
+              <span id="portfolioModalCategory" class="project-category">
+                Project
+              </span>
+
+              <h3 id="portfolioModalTitle" class="portfolio-modal-title">
+                Project Title
+              </h3>
+            </div>
+
+            <button
+              type="button"
+              id="portfolioModalClose"
+              class="portfolio-modal-close"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <!-- SCREENSHOTS -->
+
+          <div id="portfolioModalGallery" class="portfolio-modal-gallery"></div>
+        </div>
+      </div>
+    <!-- =========================================
+    SERVICES
+    ========================================= -->
+    <section id="services" class="py-24 reveal reveal-up delay-200">
+        <div class="container mx-auto px-6">
+      
+          <!-- Heading -->
+          <div class="max-w-3xl mx-auto text-center">
+      
+            <span
+              class="section-label"
+              data-i18n="servicesLabel"
+            >
+              My Services
+            </span>
+      
+            <h2
+              class="mt-5 text-5xl font-bold text-heading"
+              data-i18n="servicesTitle"
+            >
+              Solutions I Can Build
+            </h2>
+      
+            <p
+              class="mt-6 text-lg text-paragraph leading-8"
+              data-i18n="servicesDescription"
+            >
+              I create modern websites, web applications, dashboards, and
+              AI-powered solutions focused on performance, clean code, and user
+              experience.
+            </p>
+      
+          </div>
+      
+      
+          <!-- Cards -->
+          <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-7 mt-16">
+      
+            <!-- Card 1 -->
+            <div class="service-card">
+      
+              <div class="service-icon">
+                <i class="fa-solid fa-building"></i>
+              </div>
+      
+              <h3 data-i18n="service1Title">
+                Company Profile
+              </h3>
+      
+              <p data-i18n="service1Description">
+                Professional company websites with responsive layouts, fast
+                loading speed, and SEO optimization.
+              </p>
+      
+              <div class="service-tags">
+                <span>HTML</span>
+                <span>Tailwind</span>
+                <span>SEO</span>
+              </div>
+      
+              <a
+                href="#"
+                class="service-link"
+                data-i18n="learnMore"
+              >
+                Learn More →
+              </a>
+      
+            </div>
+      
+      
+            <!-- Card 2 -->
+            <div class="service-card">
+      
+              <div class="service-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+      
+              <h3 data-i18n="service2Title">
+                Landing Page
+              </h3>
+      
+              <p data-i18n="service2Description">
+                High-converting landing pages for products, startups, and
+                marketing campaigns.
+              </p>
+      
+              <div class="service-tags">
+                <span>UI</span>
+                <span>UX</span>
+                <span>Responsive</span>
+              </div>
+      
+              <a
+                href="#"
+                class="service-link"
+                data-i18n="learnMore"
+              >
+                Learn More →
+              </a>
+      
+            </div>
+      
+      
+            <!-- Card 3 -->
+            <div class="service-card">
+      
+              <div class="service-icon">
+                <i class="fa-solid fa-chart-simple"></i>
+              </div>
+      
+              <h3 data-i18n="service3Title">
+                Dashboard System
+              </h3>
+      
+              <p data-i18n="service3Description">
+                Interactive dashboards built with PHP, Laravel, Python and
+                Streamlit.
+              </p>
+      
+              <div class="service-tags">
+                <span>Laravel</span>
+                <span>Python</span>
+                <span>Charts</span>
+              </div>
+      
+              <a
+                href="#"
+                class="service-link"
+                data-i18n="learnMore"
+              >
+                Learn More →
+              </a>
+      
+            </div>
+      
+      
+            <!-- Card 4 -->
+            <div class="service-card">
+      
+              <div class="service-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+      
+              <h3 data-i18n="service4Title">
+                Custom Web App
+              </h3>
+      
+              <p data-i18n="service4Description">
+                Custom web applications tailored for business needs, including
+                management systems, dashboards, and internal tools.
+              </p>
+      
+              <div class="service-tags">
+                <span>PHP</span>
+                <span>Laravel</span>
+                <span>Python</span>
+              </div>
+      
+              <a
+                href="#"
+                class="service-link"
+                data-i18n="learnMore"
+              >
+                Learn More →
+              </a>
+      
+            </div>
+      
+          </div>
+        </div>
+      </section>
+    <!-- =========================================
+     CONTACT SECTION
+    ========================================= -->
+      <section id="contact" class="section reveal reveal-up delay-200">
+        <div class="container mx-auto px-6">
+          <!-- Heading -->
+
+          <div class="mx-auto max-w-3xl text-center">
+            <span class="section-label" data-i18n="contactLabel">
+              Contact
+            </span>
+
+            <h2 class="section-title">
+              <span data-i18n="contactTitle1"> Let's Build Something </span>
+
+              <span class="text-primary" data-i18n="contactTitle2">
+                Great Together
+              </span>
+            </h2>
+
+            <p
+              class="section-description mx-auto"
+              data-i18n="contactDescription"
+            >
+              Have a project idea, business opportunity, or collaboration
+              proposal? Feel free to reach out and let's discuss how I can help
+              bring your ideas to life.
+            </p>
+          </div>
+
+          <!-- Contact Layout -->
+
+          <div class="contact-container">
+            <!-- Contact Information -->
+
+            <div class="contact-info">
+              <!-- Email -->
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <a href="mailto:algipratamasasra@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                  </a>
+                </div>
+
+                <div>
+                  <h3 data-i18n="contactEmail">Email</h3>
+
+                  <p>
+                    <a href="mailto:algipratamasasra@gmail.com">
+                      algipratamasasra@gmail.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- LinkedIn -->
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <a
+                    href="https://www.linkedin.com/in/algi-pratama-sasra-7a23432b2/"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </div>
+
+                <div>
+                  <h3 data-i18n="contactLinkedin">LinkedIn</h3>
+
+                  <p>
+                    <a
+                      href="https://www.linkedin.com/in/algi-pratama-sasra-7a23432b2/"
+                      target="_blank"
+                    >
+                      linkedin.com/in/algipratama
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <a href="https://github.com/Algiinfo" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+
+                <div>
+                  <h3 data-i18n="contactGithub">GitHub</h3>
+
+                  <p>
+                    <a href="https://github.com/Algiinfo" target="_blank">
+                      github.com/Algiinfo
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Availability -->
+
+              <div class="contact-availability">
+                <h3 data-i18n="availableFor">Available For</h3>
+
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <span data-i18n="availableFreelance">
+                      Freelance Projects
+                    </span>
+                  </li>
+
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <span data-i18n="availableFulltime">
+                      Full-Time Opportunities
+                    </span>
+                  </li>
+
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <span data-i18n="availableCollaboration">
+                      Collaboration
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+
+            <div class="contact-form-wrapper">
+              <form id="contactForm" class="contact-form">
+                <div class="contact-field">
+                  <label data-i18n="formName"> Name </label>
+
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    data-i18n-placeholder="placeholderName"
+                    placeholder="Your name"
+                  />
+                </div>
+
+                <div class="contact-field">
+                  <label data-i18n="formEmail"> Email </label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    data-i18n-placeholder="placeholderEmail"
+                    placeholder="Your email"
+                  />
+                </div>
+
+                <!-- Subject (Hidden) -->
+
+                <input
+                  type="hidden"
+                  id="title"
+                  name="title"
+                  value="Portfolio Contact Form"
+                />
+
+                <!-- Time (Hidden) -->
+
+                <input type="hidden" id="time" name="time" />
+
+                <div class="contact-field">
+                  <label data-i18n="formMessage"> Message </label>
+
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    data-i18n-placeholder="placeholderMessage"
+                    placeholder="Tell me about your project"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary contact-submit">
+                  <span data-i18n="sendMessage"> Send Message </span>
+
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+</main>
+
+    <!-- ========================= -->
+    <!-- Footer -->
+    <!-- ========================= -->
+    <footer class="footer reveal reveal-up delay-200">
+      <!-- Background Effect -->
+      <div class="footer-animation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="container mx-auto px-6">
+        <div class="footer-container">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <a href="#hero" class="footer-logo"> ALGI </a>
+
+            <p class="footer-role" data-i18n="footerRole">
+              Web Developer • AI Enthusiast
+            </p>
+
+            <p class="footer-description" data-i18n="footerDescription">
+              Crafting modern websites, scalable web applications, and digital
+              experiences with clean architecture, responsive design, and
+              performance-driven solutions.
+            </p>
+
+            <div class="footer-status">
+              <span class="status-dot"></span>
+
+              <span data-i18n="footerStatus">
+                Available for Freelance & Full-Time
+              </span>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="footer-links">
+            <h3 data-i18n="footerNavigation">Navigation</h3>
+
+            <a href="#about" data-i18n="navAbout">About</a>
+            <a href="#experience" data-i18n="navExperience">Experience</a>
+            <a href="#internship" data-i18n="navExperience">Internship</a>
+            <a href="#skills" data-i18n="navSkills">Skills</a>
+            <a href="#certification" data-i18n="navServices">Certification</a>
+            <a href="#organizations" data-i18n="navServices">Organization</a>
+            <a href="#portfolio" data-i18n="navProjects">Portfolio</a>
+          </div>
+
+          <!-- Connect -->
+          <div class="footer-links">
+            <h3 data-i18n="footerConnect">Connect</h3>
+
+            <a
+              href="https://github.com/Algiinfo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/algi-pratama-sasra-7a23432b2/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+              LinkedIn
+            </a>
+
+            <a href="mailto:algipratamasasra@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              Email
+            </a>
+
+            <a
+              href="https://wa.me/6282386886758"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+              WhatsApp
+            </a>
+            <a
+              href="https://www.instagram.com/algipratamasasra_/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-instagram"></i>
+              Instagram
+            </a>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="footer-divider"></div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+          <p data-i18n="footerCopyright" class="text-center">
+            © 2026 Algi Pratama Sasra. All rights reserved.
+          </p>
+
+          <p data-i18n="footerCredit" class="text-center">
+            Designed & Developed with ❤️ using HTML, Tailwind CSS & JavaScript
+          </p>
+        </div>
+      </div>
+
+      <!-- Back To Top -->
+      <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg class="progress-ring" width="66" height="66">
+          <circle class="progress-ring-bg" cx="33" cy="33" r="29"></circle>
+
+          <circle class="progress-ring-circle" cx="33" cy="33" r="29"></circle>
+        </svg>
+
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </footer>
+
+    <script src="./assets/js/intro-loader.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/translations.js"></script>
+    <script src="./assets/js/language.js"></script>
+    <script src="./assets/js/backtotop.js"></script>
+    <script src="./assets/js/reveal.js"></script>
+    <script src="./assets/js/theme.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./assets/js/contact.js"></script>
+    <div id="cursor-glow"></div>
+  </body>
+</html>
